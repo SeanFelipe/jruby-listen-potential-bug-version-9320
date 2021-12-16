@@ -13,7 +13,7 @@ I believe there's a bug with listen and 9.3.x versions of JRuby. Somehow listen 
 or
 
 ```
-cd src && jruby desktop.rb
+export JAVACMD=$JAVA_HOME/bin/java && cd src && jruby desktop.rb
 ```
 
 A blank game screen should spawn. Now, edit `src/zredc.rb` and change the base value in the render method:
